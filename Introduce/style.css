@@ -1,0 +1,178 @@
+/* 导航栏样式 */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+
+}
+
+nav ul li:hover>ul {
+  display: inherit;
+  z-index: 1;
+}
+
+nav ul li ul li {
+  width: 100%;
+  display: list-item;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  height: 52px;
+}
+
+.top {
+  position: fixed;
+  background-color: rgb(236, 241, 247);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.header img {
+  height: 40px;
+}
+
+.header .img-box {
+  font-size: 30px;
+  display: flex;
+}
+
+.header-nav ul {
+  list-style: none;
+}
+
+.header-logo {
+  width: 50px;
+}
+
+.header-nav {
+  display: flex;
+  opacity: 0.8;
+}
+
+.header-nav a {
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.header-nav a:hover {
+  color: white;
+  background-color: rgb(135, 203, 240);
+}
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+  display: flex;
+  background-color: rgb(185, 225, 255);
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+footer .right {
+  display: flex;
+}
+
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: #CCCCCC;
+  padding: 5px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.input-container input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.input-container svg {
+  fill: #333333;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* content */
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content .box .img-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.content .box img {
+  width: 300px;
+  height: 400px;
+}
+
+
+.content .box .right {
+  margin-right: 50px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+html {
+  height: 100vh;
+  background-image: url(../Image/7.jpg);
+  background-size: 100% 100%;
+}

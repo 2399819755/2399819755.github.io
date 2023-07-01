@@ -1,0 +1,290 @@
+/* 导航栏样式 */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background-color: #fff;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+}
+
+nav ul li:hover>ul {
+  display: inherit;
+  z-index: 1;
+}
+
+nav ul li ul li {
+  width: 100%;
+  display: list-item;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  height: 100vh;
+  background-image: url(./Image/30.jpg);
+  background-size: 100% 100%;
+}
+
+.top {
+  position: fixed;
+  background-color: rgb(236, 241, 247);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.header img {
+  height: 40px;
+}
+
+.header .img-box {
+  font-size: 30px;
+  display: flex;
+}
+
+.header-nav ul {
+  list-style: none;
+}
+
+.header-logo {
+  width: 50px;
+}
+
+.header-nav {
+  display: flex;
+  opacity: 0.8;
+}
+
+.header-nav a {
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+  ;
+  font-size: 18px;
+}
+
+.header-nav a:hover {
+  color: white;
+  background-color: rgb(135, 203, 240);
+}
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+  display: flex;
+  background-color: rgb(185, 225, 255);
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+footer .right {
+  display: flex;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: #CCCCCC;
+  padding: 5px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.input-container input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.input-container svg {
+  fill: #333333;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+
+
+
+.box {
+  width: calc(25% - 20px);
+  margin: 10px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box img {
+  width: 100%;
+  height: 224px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.box h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.show h1 {
+  display: flex;
+  justify-content: center;
+}
+
+
+.show .liked {
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.show .unliked {
+  background-color: rgb(185, 225, 255);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.show .box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.show .w4 {
+  width: calc(20% - 20px);
+}
+
+/* 轮播模块 */
+.image-container {
+  width: 88%;
+  margin: auto;
+  overflow-x: scroll;
+}
+
+.scrollable-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.scrollable-content {
+  display: flex;
+}
+
+.image-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+/* 自定义滚动条的轨道 */
+::-webkit-scrollbar {
+  width: 10px;
+  /* 滚动条宽度 */
+}
+
+/* 自定义滚动条的滑块 */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(183, 226, 254);
+  /* 滑块背景颜色 */
+  border-radius: 5px;
+  /* 滑块圆角 */
+}
+
+/* 鼠标悬停在滚动条上时的样式 */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(183, 226, 254);
+  /* 悬停时的滑块背景颜色 */
+}
+
+/* 自定义滚动条的轨道背景 */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  /* 轨道背景颜色 */
+}
+
+/* 自定义滚动条的轨道背景，鼠标悬停时的样式 */
+::-webkit-scrollbar-track:hover {
+  background-color: #ddd;
+  /* 悬停时的轨道背景颜色 */
+}
+
+
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  display: none;
+}
